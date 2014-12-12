@@ -15,7 +15,6 @@ RUN apt-get update \
     && tar xf owncloud.tar.gz \
     && mv owncloud/* /var/www/html \
     && chown -R www-data:www-data /var/www/html \
-    && sh /var/tmp/rights.sh
     && rm -r owncloud* \
     && rm /var/www/html/index.html
     && apt-get clean \
