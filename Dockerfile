@@ -11,7 +11,7 @@ ADD rights.sh /var/tmp/rights.sh
 RUN apt-get update \
     && apt-get install curl php5-gd php5-json php5-mysql php5-curl php5-intl php5-mcrypt php5-imagick -y \
     && a2enmod rewrite \
-    && curl -o owncloud.tar.gz https://download.owncloud.org/community/owncloud-7.0.4.tar.bz2 \
+    && curl -o owncloud.tar.gz https://download.owncloud.org/community/owncloud-8.0.2.tar.bz2 \
     && tar xf owncloud.tar.gz \
     && mv owncloud/* /var/www/html \
     && chown -R www-data:www-data /var/www/html \
