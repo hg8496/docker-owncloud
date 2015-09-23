@@ -16,7 +16,7 @@ RUN apt-get update \
     && cp -a owncloud/. /var/www/html \
     && chown -R www-data:www-data /var/www/html \
     && rm -r owncloud* \
-    && rm /var/www/html/index.html
+    && rm /var/www/html/index.html \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 CMD ["/sbin/my_init"]
