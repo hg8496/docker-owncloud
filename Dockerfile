@@ -19,4 +19,5 @@ RUN apt-get update \
     && rm /var/www/html/index.html \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+VOLUME [ "/var/www/html/config" ]
 CMD ["/sbin/my_init"]
